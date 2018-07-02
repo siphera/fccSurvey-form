@@ -1,0 +1,37 @@
+html,
+body {
+    background-color: yellow;
+    text-align: center;
+    min-width: 320px;
+}
+
+#paper {
+    background-color: white;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+#description {
+    font-size: 23px;
+}
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
