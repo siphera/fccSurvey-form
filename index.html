@@ -8,7 +8,7 @@
     <title> Survey form </title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
 
 </head>
 
@@ -22,18 +22,51 @@
                 <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
             </div>
             <div class="">
-                <label id="name-label" for="email">Email: </label>
+                <label id="email-label" for="email">Email: </label>
                 <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
             </div>
             <div class="">
-                <label id="name-label" for="age">Age: </label>
+                <label id="number-label" for="age">Age: </label>
                 <input type="number" name="age" id="number" class="input-field" min="1" max="90" placeholder="Age" required>
             </div>
             <div class="">
-                
+                <label id="name-label" for="dropdown">Which option best describes your current role? </label>
+                <select id="dropdown" name="currentPos" class="dropdown">
+                    <option disabled name>Select an option</option>
+                    <option  name="student">Student</option>
+                    <option name="job">Full Time Job</option>
+                    <option name="learner">Full Time Learner</option>
+                    <option name="preferNo">Prefer not to say</option>
+                    <option name="other">Other</option>
+                </select>
             </div>
+            <div class="">
+                <label id="name-label" for="position">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Definitely<input name="radio-buttons" value="def"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Maybe<input name="radio-buttons" value="mayb"  type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label>Not sure<input name="radio-buttons" value="nt"  type="radio" class="userRatings" ></label></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="checkbox"><label for="checkbox"><input type="checkbox" name="choose" value="">placeholder</label></li>
+                    <li class="checkbox"><label for="checkbox"><input type="checkbox" name="choose" value="">placeholder</label></li>
+                    <li class="checkbox"><label for="checkbox"><input type="checkbox" name="choose" value="">placeholder</label></li>
+                    <li class="checkbox"><label for="checkbox"><input type="checkbox" name="choose" value="">placeholder</label></li>
+                    <li class="checkbox"><label for="checkbox"><input type="checkbox" name="choose" value="">placeholder</label></li>
+                </ul>
+            </div>
+            <div>
+                <label for="comments">Enter your comments here</label>
+            </div>
+            <div>
+                <textarea id="comments" name="" id="" rows="4"></textarea>
+            </div>
+            <button>Submit</button>
         </form>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
